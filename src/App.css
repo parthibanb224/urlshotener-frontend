@@ -1,38 +1,135 @@
 .App {
+  background-image: url('https://www.imageshine.in/uploads/sub_category/Pin-and-White-wave-background-wallpaper-free-download.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homePage-buttons {
+  margin-top: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.login-box {
+  background-color: rgb(211, 45, 143);
+  border-radius: 15%;
+  opacity: 1;
+  width: 450px;
+  height: 600px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  >div {
+    >img {
+      margin-top: 40px;
+      width: 100px;
+      height: 100px;
+      margin-left: 170px;
+    }
+  }
+
+  >div {
+    >.input-box {
+      border: none;
+      background-color: transparent;
+    }
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.signup-box {
+  background-color: rgb(211, 45, 143);
+  border-radius: 15%;
+  opacity: 1;
+  width: 450px;
+  height: 600px;
+
+  >div {
+    >img {
+      margin-top: 40px;
+      width: 100px;
+      height: 100px;
+      margin-left: 170px;
+    }
+  }
+
+  >div {
+    >.input-box {
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+
+.forgot-box {
+  background-color: rgb(211, 45, 143);
+  border-radius: 15%;
+  opacity: 1;
+  width: 450px;
+  height: 400px;
+
+  >div {
+    >img {
+      margin-top: 50px;
+      width: 100px;
+      height: 100px;
+      margin-left: 170px;
+    }
+  }
+
+  >div {
+    >.input-box {
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+
+.resetPassword-box {
+  background-color: rgb(211, 45, 143);
+  border-radius: 15%;
+  opacity: 1;
+  width: 450px;
+  height: 500px;
+
+  >div {
+    >img {
+      margin-top: 40px;
+      width: 100px;
+      height: 100px;
+      margin-left: 170px;
+    }
+  }
+
+  >div {
+    >.input-box {
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+
+.forget-field {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.non-user {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.already-user {
+  text-align: center;
+}
+
+.pwd-container {
+  position: relative;
+}
+
+.pwd-container img {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  right: 10px;
+  top: 14px;
 }
