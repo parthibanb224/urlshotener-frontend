@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import MyImage from '../Assets/user.png'
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -10,7 +10,7 @@ import { useUser } from '../context/Users.context';
 export default function Login() {
 
     const [passwordMode, setPasswordMode] = useState(false);
-    const {input,setInput,handleLogin} = useUser();
+    const { input, setInput, handleLogin } = useUser();
 
     return (
         <div>

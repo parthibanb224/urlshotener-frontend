@@ -9,6 +9,7 @@ import ResetPassword from './pages/ResetPassword';
 import PasswordChanged from './pages/PasswordChanged';
 import LoginSuccess from './pages/LoginSuccess';
 import Dashboard from './pages/Dashboard';
+import UserActivities from './pages/UserActivities';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/passwordChanged' Component={PasswordChanged}></Route>
         <Route path='/loginSuccess' Component={LoginSuccess}></Route>
         <Route path='/dashboard' Component={Dashboard}></Route>
+        <Route path='/userActivities' Component={UserActivities}></Route>
       </Routes>
     </div>
   );
