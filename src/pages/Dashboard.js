@@ -11,6 +11,7 @@ export default function Dashboard() {
   const [url, serUrl] = useState("");
   const [createShortenUrl, setCreateShortenUrl] = useState("");
   const { signinUser, setSigninUser, userShortenUrl, setUserShortenUrl } = useUser();
+  const [loading,setLoading] = useState("false");
 
   useEffect(() => {
     let token = JSON.parse(sessionStorage.getItem("Token"));
@@ -19,6 +20,7 @@ export default function Dashboard() {
 
   const handleUrl = async (e) => {
     e.preventDefault();
+    setLoading("true");
     try {
       const response = await fetch(
         `https://api.shrtco.de/v2/shorten?url=${url}`
@@ -64,7 +66,7 @@ export default function Dashboard() {
                 <div className='text-center'><Button className="border-1 border-blue-500 text-blue-500 font-medium rounded-md">Copy URL to Clipboard</Button>{' '}</div>
               </CopyToClipboard>
             </div>
-            : ""}
+            : loading === "true" ? <p style={{color:"red"}}>Loading...</p> : "" }
         </div>
       </Form>
     </div>
